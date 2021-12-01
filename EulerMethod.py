@@ -17,7 +17,7 @@ original=[]
 hello=0
 
 fig, ax = plt.subplots()
-plt.title("Newton VS Analytical\n0.1 Interval")
+plt.title("Euler VS Analytical\n0.1 Interval")
 ax.set_xlabel("X", fontdict = {'fontsize':14, 'fontweight':'bold', 'color':'tab:blue'})
 ax.set_ylabel("Y", fontdict = {'fontsize':14, 'fontweight':'bold', 'color':'tab:blue'})
 ax.set_xlim([-3,2.5])
@@ -34,6 +34,6 @@ while(x<2.6):
     y=y+(h*f)
     print(newton)
 
-ax.scatter(ex, yei,s=5,label='Newton')
-ax.scatter(ex, original,s=5,label='Analytical')
+ax.scatter(ex, yei,s=5)
+ax.scatter(ex, original,s=5)
 plt.show()
